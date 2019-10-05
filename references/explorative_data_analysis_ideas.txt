@@ -1,0 +1,10 @@
+1. split ActSceneLine by dot
+2. add total number of words for PlayerLine
+3. add total number of characters for PlayerLine
+4. calculate the length of Play
+5. whether PlayerLine contains exclamation mark
+6. whether PlayerLine contains question mark
+7. number of parts in PlayerLine splitted by comma
+8. number of stop words in PlayerLine 
+9. number of upper case letters in PlayerLine
+10. PlayerLine word density - average length of words used in PlayerLine
