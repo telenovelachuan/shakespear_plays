@@ -1,31 +1,5 @@
-A data science project on the Shakespear plays dataset to explore more useful features and build classification models to determin the player using other columns as features.
+Train classification models to determine "Player" based on other features.
 
-
-# Feature explorative ideas
-- split ActSceneLine by dot
-- add total number of words for PlayerLine
-- add total number of characters for PlayerLine
-- calculate the length of Play
-- whether PlayerLine contains exclamation mark
-- whether PlayerLine contains question mark
-- number of parts in PlayerLine splitted by comma
-- number of stop words in PlayerLine 
-- number of upper case letters in PlayerLine
-- PlayerLine word density - average length of words used in PlayerLine
-
-
-# data preprocessing
-- load processed dataset, with all 10 explorative features added, into Pandas
-- for numeric features:
-  1. use imputer that fills median values
-  2. use StandardScaler to normalize feature values
-- for categorical features: use one hot encoding to encode feature values
-- split train/test data via random shuffling
-- drop Player column to form training data
-- for Keras Dense Neural Network, one-hot encode the label in advance and transform to matrix
-
-
-# Classification process to determine Player using other features
 1. Logistic Regression
 uses multinomial multi_class regressor in sklearn(softmax) to conduct multi-label classification, it trains rather slow due to the huge amount of attributes.
 reaches an accuracy of 0.5556 on testing set.

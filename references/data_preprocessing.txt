@@ -1,0 +1,8 @@
+- load processed dataset, with explorative features added, into Pandas
+- for numeric features:
+  1. use imputer that fills median values
+  2. use StandardScaler to normalize feature values
+- for categorical features: use one hot encoding to encode feature values
+- split train/test data via random shuffling
+- drop Player column to form training data
+- for Keras Dense Neural Network, one-hot encode the label in advance and transform to matrix
