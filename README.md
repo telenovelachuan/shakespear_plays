@@ -2,7 +2,7 @@ A data science project on the Shakespear plays dataset to explore more useful fe
 
 
 # Feature explorative ideas
-Try to extract info from "PlayerLine" since it's text, as well as other categorical columns like "Play"
+Try to extract info using NLTK from "PlayerLine" since it's text, and apply similar metrics on categorical columns like "Play" and "ActSceneLine"
 - split ActSceneLine by dot
 - add total number of words for PlayerLine
 - add total number of characters for PlayerLine
