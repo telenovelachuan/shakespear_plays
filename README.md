@@ -28,20 +28,25 @@ Try to extract info from "PlayerLine" since it's text, as well as other categori
 
 # Classification process to determine Player using other features
 models tried:
+
 1. Logistic Regression
+
 uses multinomial multi_class regressor in sklearn(softmax) to conduct multi-label classification, it trains rather slow due to the huge amount of attributes.
 reaches an accuracy of 0.5556 on testing set.
 
 2. Random Forest
+
 Tuned n_estimators to be 20. Trained much faster than LR, and reaches an accuracy of 0.6132 on testing set.
 Further increasing the number of trees does not help increase accuracy.
 
 3. SVM
+
 uses the Support Vector Classifier with a "poly" kernel by sklearn. Training takes too much time(more than several days) and never converges...
 I think the huge amount of attributes(especially the sparse matrices by one-hot encoding) slows down SVM's kernel trick to find a linear-separable solution in high dimensions.
 Besides, the SVC class implemented by sklearn is not specifically optimized such as LinearSVC does.
 
 4. Neural Network
+
 uses Keras to construct and compile a neural network that contains 2 dense hidden layers and 1 output layer(more layers barely helps).
 uses "RELU" for activation inside hidden layers, and "softmax" for the final output layer.
 60 epochs' training achieves an accuracy of 0.741 on testing set. Training for more epochs could further improve accuracy, but increases overfitting as well.
