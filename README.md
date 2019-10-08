@@ -1,7 +1,7 @@
 A data science project on the Shakespear plays dataset to explore more useful features and build classification models to determin the player using other columns as features.
 
 
-# Feature explorative ideas
+# Feature explorative ideas. Try to extract info from "PlayerLine" since it's text, as well as other categorical columns like "Play"
 - split ActSceneLine by dot
 - add total number of words for PlayerLine
 - add total number of characters for PlayerLine
@@ -14,7 +14,7 @@ A data science project on the Shakespear plays dataset to explore more useful fe
 - PlayerLine word density - average length of words used in PlayerLine
 
 
-# data preprocessing
+# Data Preprocessing
 - load processed dataset, with all 10 explorative features added, into Pandas
 - for numeric features:
   1. use imputer that fills median values
@@ -26,6 +26,7 @@ A data science project on the Shakespear plays dataset to explore more useful fe
 
 
 # Classification process to determine Player using other features
+models tried:
 1. Logistic Regression
 uses multinomial multi_class regressor in sklearn(softmax) to conduct multi-label classification, it trains rather slow due to the huge amount of attributes.
 reaches an accuracy of 0.5556 on testing set.
