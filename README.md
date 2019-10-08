@@ -31,7 +31,8 @@ models tried:
 
 1. Logistic Regression
 
-Uses multinomial multi_class regressor in sklearn(softmax) to conduct multi-label classification. It trains rather slow due to the huge amount of attributes.
+Uses multinomial multi_class regressor in sklearn(softmax) to conduct multi-label classification.
+Training was rather slow due to the huge amount of attributes, and finally came out with a model of 13G, which is beyond Github's limit for file size :(
 Reaches an accuracy of 0.5556 on testing set.
 
 2. Random Forest
