@@ -16,7 +16,7 @@ Besides, the SVC class implemented by sklearn is not specifically optimized such
 4. Neural Network
 uses Keras to construct and compile a neural network that contains 2 dense hidden layers(100 neurons each) and 1 output layer(more layers barely helps). Stochastic gradient descent is used for backpropagation.
 uses "RELU" for activation inside hidden layers, and "softmax" activation for the final output layer since it's a multi-label classification.
-60 epochs' training achieves an accuracy of ~0.8 on testing set. Training for more epochs could further improve accuracy, but increases overfitting as well. The NN_training_history.png in reports shows the changing process of accuracy on training data and validation data. It seems the model begins to overfit after 50~60 epochs, maybe some dropout layers or batch normalizations could be added further.
+60 epochs' training achieves an accuracy of ~0.77 on testing set. Training for more epochs could further improve accuracy, but increases overfitting as well. The NN_training_history.png in reports shows the changing process of accuracy on training data and validation data. It seems the model begins to overfit after 50~60 epochs, maybe some dropout layers or batch normalizations could be added further.
 
 5. XGBoost
 Tried this super powerful library based on gradient boosting forest. Unfortunately the model took a time longer than I could wait to converge :(
